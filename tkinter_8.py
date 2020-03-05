@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter.messagebox import *
 from math import *
+
 '''
 #202225
 #292B2F
@@ -8,6 +9,11 @@ from math import *
 #36393F
 #6F85D2
 '''
+
+
+# 1  -1  -30    x1 = 6, x2 = -5
+# 1   4    8    x1 = —, x2 =  —
+# 5 -10   10    x1 = x2 = 1
 
 def pressbutton(event):
     try:
@@ -79,8 +85,7 @@ entC.pack(side=LEFT, padx=5)
 
 fr_res = Frame(root, bg='#262726')
 
-
-btn = Button(fr_res, text='x1, x2 =', bg='#4D1010', fg='#EDE6D5',relief=FLAT, font=('Sans', 12, 'bold'))
+btn = Button(fr_res, text='x1, x2 =', bg='#4D1010', fg='#EDE6D5', relief=FLAT, font=('Sans', 12, 'bold'))
 btn.bind('<Button-1>', pressbutton)
 btn.pack(side=LEFT, padx=30)
 lbRES = Label(fr_res, fg='#FFEBBD', bg='#262726', font=('Sans', 12, 'bold'))
