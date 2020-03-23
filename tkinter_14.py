@@ -54,13 +54,13 @@ entN.insert(0, 0)
 entN.focus()
 entN.pack(side=LEFT, padx=5)
 
-fr_res = LabelFrame(root, bg='#00AEEF', fg='#FFFFFF', highlightcolor='#FFFFFF', text='Поиск отрицательного числа',
+fr_res = LabelFrame(root, bg='#009900', fg='#FFFFFF', highlightcolor='#FFFFFF', text='Поиск отрицательного числа',
                     font=('Futura', 16, 'bold'), bd=0)
 
-btn = Button(fr_res, text='► Пуск', bg='#FFFFFF', fg='#00AEEF', relief=FLAT, font=('Sans', 12, 'bold'))
+btn = Button(fr_res, text='► Пуск', bg='#FFFFFF', fg='#009900', relief=FLAT, font=('Sans', 12, 'bold'))
 btn.bind('<Button-1>', IWantToBreakFree)
 btn.pack(side=LEFT, padx=30)
-lbRES = Label(fr_res, fg='#FFFFFF', bg='#00AEEF', font=('sans', 16, 'bold'))
+lbRES = Label(fr_res, fg='#FFFFFF', bg='#009900', font=('sans', 16, 'bold'))
 lbRES.pack(side=LEFT, padx=20)
 
 fr_ent.pack(side=TOP, expand=YES, fill=BOTH)

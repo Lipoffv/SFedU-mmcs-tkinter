@@ -83,7 +83,7 @@ entC = Entry(fr_ent, bg='#FFEBBD', font=('Sans', 10))
 # entC.insert(0, 0)
 entC.pack(side=LEFT, padx=5)
 
-fr_res = Frame(root, bg='#262726')
+fr_res = LabelFrame(root, bg='#262726', fg='#EDE6D5', text='    Ax^2 + Bx + C = 0', font=('Sans', 12, 'bold'), bd=0)
 
 btn = Button(fr_res, text='x1, x2 =', bg='#4D1010', fg='#EDE6D5', relief=FLAT, font=('Sans', 12, 'bold'))
 btn.bind('<Button-1>', pressbutton)

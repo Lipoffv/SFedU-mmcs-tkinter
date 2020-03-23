@@ -34,7 +34,7 @@ root.title('Божемойужедвачасаночияхочуспать')
 
 lb_choose = Frame(root, )
 lbNAME = Label(lb_choose, text='Фамилия Имя Отчество').pack(side=TOP, expand=YES, fill=BOTH)
-name = Entry(lb_choose)
+name = Entry(lb_choose, width=30)
 name.pack(side=TOP, expand=YES)
 # scroll = Scrollbar(lb_choose, command=name.yview)
 # scroll.pack(side=LEFT, fill=Y)

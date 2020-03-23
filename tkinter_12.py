@@ -42,19 +42,23 @@ root.title('Проверка строки')
 
 fr_ent = Frame(root, bg='#FFFFFF')
 
-lbN = Label(fr_ent, text='s =', bg='#FFFFFF', fg='#434C5D', font=('Futura', 12, 'bold')).pack(side=LEFT, padx=10)
-entN = Entry(fr_ent, bg='#FFFFFF', font=('sans', 12, 'bold'), fg='#434C5D')
+lbN = Label(fr_ent, text='s =', bg='#FFFFFF', fg='black', font=('Futura', 12, 'bold')).pack(side=LEFT, padx=10)
+entN = Entry(fr_ent, bg='#FFFFFF', font=('sans', 12, 'bold'), fg='black')
 entN.insert(0, 0)
 entN.focus()
 entN.pack(side=LEFT, padx=5)
 
-fr_res = LabelFrame(root, bg='#00AEEF', fg='#FFFFFF', highlightcolor='#FFFFFF', text='Проверо4ка строки', font=('Futura', 16, 'bold'), bd=0)
+
+fr_lf = Frame(root, bg='#FF6800', width=25)
+fr_lf.pack(side=LEFT, fill=BOTH)
+
+fr_res = LabelFrame(root, bg='#FF9218', fg='white', highlightcolor='#FFFFFF', text='Проверо4ка строки', font=('Futura', 16, 'bold'), bd=0)
 
 
-btn = Button(fr_res, text='Проверо4ка ;3', bg='#FFFFFF', fg='#00AEEF',relief=FLAT, font=('Sans', 12, 'bold'))
+btn = Button(fr_res, text='Проверо4ка ;3', bg='#FFFFFF', fg='#EA7500',relief=FLAT, font=('Sans', 12, 'bold'))
 btn.bind('<Button-1>', GiGiZaWaGi)
 btn.pack(side=LEFT, padx=30)
-lbRES = Label(fr_res, fg='#FFFFFF', bg='#00AEEF', font=('sans', 16, 'bold'))
+lbRES = Label(fr_res, fg='#FFFFFF', bg='#FF9218', font=('sans', 16, 'bold'))
 lbRES.pack(side=LEFT, padx=20)
 
 fr_ent.pack(side=TOP, expand=YES, fill=BOTH)
